@@ -1,0 +1,44 @@
+#Home{
+    background-image: url('../Images/DIFFERENT_TYPES_of_WEBSITES_jpg_CIaku32S.avif');
+}
+*{padding: 0; margin:0; box-sizing: border-box;}
+body{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand{
+    letter-spacing: 3px;
+}
+.container img{
+    display: inline-block;
+}
+.icon i{
+    padding: 20px;
+    background-color: skyblue;
+    font-size: 30px;
+    color: white;
+    margin:10px 15px;
+    border-radius: 50%;
+}
+
+.dental img{
+    height: 320px;
+    width: 100%;
+    
+
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+
+.testamonials img{
+height: 150px;
+width:350px;
+}

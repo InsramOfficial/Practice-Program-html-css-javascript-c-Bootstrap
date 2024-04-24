@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(images/hero-img.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    position: sticky;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 1000;
+    user-select: none;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 1s;
+
+}
+
+.nav-links ul li a:hover {
+    color: #19a463;
+}
+
+
+
+.nav-links ul li button {
+    color: white;
+    padding: 9px 12px;
+    background: transparent;
+    border: 0.5px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.nav-links ul li button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 9px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.nav-links ul li button:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.nav-links ul li button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.about {
+    position: relative;
+    transform: translateY(-50%);
+    top: 40%;
+    left: 10%;
+    color: white;
+
+}
+
+.about h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.search-form {
+    display: flex;
+    height: 48px;
+    max-width: 630px;
+    margin-top: 30px;
+}
+
+.search-form input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: #fff;
+    font-size: 1rem;
+    padding: 0 15px;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-form button {
+    height: 100%;
+    width: 60px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #19a463;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.search-form button:hover {
+    background: #065834;
+}
+
+.popular-tags {
+    display: flex;
+    color: white;
+    gap: 24px;
+    font-size: 0.9rem;
+    margin-top: 25px;
+
+}
+
+.popular-tags .tags {
+    list-style: none;
+    display: flex;
+
+}
+
+.popular-tags .tags li a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 50px;
+    padding: 4px 12px;
+    margin-left: 12px;
+}

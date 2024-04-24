@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+body {
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    /* Corrected syntax for animation */
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: 0.3s;
+    animation: slidetop .5s ease forwards;
+}
+
+.navbar a:hover {
+
+    color: #0ef;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(resources/WhatsApp\ Image\ 2023-10-29\ at\ 14.27.01_47efacc9.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom .7s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideLeft 1s ease forwards;
+
+}
+
+.home-content h3 span {
+    color: #0ef;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight .7s ease forwards;
+
+}
+
+.home-content p {
+    font-size: 23px;
+    opacity: 0;
+    animation: slideleft .7s ease forwards;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    opacity: 0;
+    animation: slideleft .2s ease forwards;
+    transform: .5s ease;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.home-sci a:hover {
+    color: #081b29;
+    background: #0ef;
+    box-shadow: #0ef;
+}
+
+.btn-box {
+   
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan;
+    color: white;
+}
+
+.container {
+    padding-top: 200px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    background: url(resources/abstract-uv-ultraviolet-light-composition_23-2149243965\ \(2\).png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    width: 30%;
+
+}
+
+.image-container img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+.text-container {
+    position: relative;
+    width: 40%;
+    color: rgb(199, 225, 25);
+    text-align: justify;
+
+}
+
+.text-container h2 {
+    text-align: center;
+    color: rgb(2, 214, 229);
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.text-container h2:after {
+    content: '';
+    background: #c07a11;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.text-container h3 {
+    text-align: center;
+    color: rgb(20, 180, 34);
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ----------------about----------- */
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidetop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Add a class to trigger the animation */
+.about-me.animate {
+    animation: slideleft 1s ease forwards;
+}
+
+/* Animation keyframes for fadeInUp */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

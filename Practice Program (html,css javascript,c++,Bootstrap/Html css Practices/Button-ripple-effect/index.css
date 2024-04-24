@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: url(https://img.freepik.com/free-photo/reflection-lights-mountain-lake-captured-parco-ciani-lugano-switzerland_181624-24209.jpg?w=826&t=st=1704030808~exp=1704031408~hmac=33e863885e2a21e6f8159da3e9b511fc6bd5defe780da1503119b879e2e1b73a) no-repeat;
+    background-size: cover;
+}
+.main{
+    margin: 100px auto 0; 
+    padding: 30px;
+    max-width: 550px;
+}
+.btn{
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid red;
+
+}

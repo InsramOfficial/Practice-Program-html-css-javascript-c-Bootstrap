@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar_menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .main-box {
+            position: relative;
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/008/969/361/small/multi-layers-gray-blue-dark-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg');
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .main-box .sidebar_menu {
+            position: fixed;
+            height: 100vh;
+            width: 280px;
+            left: -280px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+            transition: left 0.3s ease-in-out;
+        }
+
+        .sidebar_menu .logo {
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+        }
+
+        .sidebar_menu .logo a {
+            color: white;
+            font-size: 25px;
+            font-weight: 500;
+            position: absolute;
+            left: 50px;
+            line-height: 60px;
+            text-decoration: none;
+        }
+
+        .sidebar_menu .menu {
+            position: absolute;
+            top: 80px;
+            width: 100%;
+        }
+
+        .sidebar_menu .menu li {
+            margin-top: 6px;
+            padding: 14px 20px;
+        }
+
+        .sidebar_menu .menu a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+
+        .sidebar_menu .menu li:hover {
+            border-left: 1px solid white;
+            box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+        }
+
+        #check {
+            display: none;
+
+        }
+
+        .main-box .btn_one i {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            position: absolute;
+            line-height: 60px;
+            cursor: pointer;
+            opacity: 1;
+            transition: all 0.3s linear;
+        }
+
+        .btn_two .check i {
+            font-size: 25px;
+            position: absolute;
+            line-height: 60px;
+            left: 240px;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s linear;
+        }
+        .btn_one i:hover {
+            font-size: 24px;
+
+        }
+
+        #check:checked~.sidebar_menu {
+            left: 0px;
+        }
+
+        #check:checked~.btn_one i {
+            opacity: 0;
+        }
+
+        #check:checked~.btn_two i {
+            opacity: 0;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="main-box">
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+            <label for="check">
+               <i class="fas fa-bars"></i>
+            </label>
+        </div>
+        <div class="sidebar_menu">
+            <div class="logo">
+                <a href="">CodingLab</a>
+            </div>
+            <div class="btn_two">
+                <div class="check">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#"></a> Dashboard</li>
+                    <li><a href="#"></a>Shortcuts</li>
+                    <li><a href="#"></a>Overview</li>
+                    <li><a href="#"></a>Events</li>
+                    <li><a href="#"></a>About</li>
+                    <li><a href="#"></a>Services</li>
+                    <li><a href="#"></a>Contact</li>
+                    <li><a href="#"></a>Feedback</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

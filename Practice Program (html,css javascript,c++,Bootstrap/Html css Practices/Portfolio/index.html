@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo"> Portfolio</a>
+
+        <nav class="navbar">
+            <a href="" style="--i:1" class="active">Home</a>
+            <a href="" style="--i:2">About</a>
+            <a href="" style="--i:3">Skills</a>
+            <a href="" style="--i:4">Portfolio</a>
+            <a href="" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, And Welcome to </h3>
+            <h1>IU-Haq Portfolio Page</h1>
+            <h3>And I'm a <span class="text"></span> </h3>
+            <p>I'm a web Designer and Develpor with extensive experince for over 1 years.
+                <br>Expertise is to create and website design, Frontend design,Backend and more .....
+            <div class="home-sci">
+                <a href="" style="--i:6"><i class='bx bxl-facebook'></i></a>
+                <a href="" style="--i:7"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
+                <a href="" style="--i:9"><i class='bx bxl-tiktok'></i></a>
+
+            </div>
+            <a href="" class="btn-box"> More About Me</a>
+            </p>
+        </div>
+
+    </section>
+    <section class="background">
+        <div class="container">
+            <div class="about-me">
+                <div class="image-container">
+                    <img src="resources/WhatsApp Image 2023-10-29 at 14.27.01_47efacc9.jpg" alt="Profile Image">
+                </div>
+                <div class="text-container">
+                    <h2>About Me</h2>
+                    <h3>Insram Ul Haq</h3>
+                    <p>
+                       <b> I am a motivated student at the University of Kotli, Azad Kashmir, specializing in web
+                        development.
+                        Currently, I am focused on mastering front-end technologies such as HTML, CSS, and JavaScript,
+                        alongside
+                        .NET Core. Simultaneously, I am gaining proficiency in back-end development using PHP, MySQL,
+                        SQL Server
+                        Management Studio, and C#. My goal is to become a skilled Full-Stack Developer, capable of
+                        creating
+                        end-to-end solutions. I am enthusiastic about staying updated on industry trends and
+                        technologies,
+                        aiming to contribute innovative and impactful solutions to the world of web development.</b>
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+    <script src="index.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the about section
+            var aboutSection = document.querySelector('.about-me');
+    
+            // Function to check if the element is in the viewport
+            function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+    
+            // Function to handle scroll event
+            function handleScroll() {
+                if (isElementInViewport(aboutSection)) {
+                    aboutSection.classList.add('animate');
+                    // Remove the event listener after the animation has played once
+                    window.removeEventListener('scroll', handleScroll);
+                }
+            }
+    
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScroll);
+    
+            // Trigger the scroll event on page load in case the element is already in the viewport
+            handleScroll();
+        });
+    </script>
+    
+</body>
+
+</html>

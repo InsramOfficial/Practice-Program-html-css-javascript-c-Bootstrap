@@ -1,0 +1,12 @@
+.container{
+    border: 5px solid black;
+}
+.row{
+    border: 5px solid rgb(91, 41, 41);
+}
+.col{
+    border: 5px solid rgb(41, 91, 71);
+}
+.h1{
+    font-style: arial;
+}

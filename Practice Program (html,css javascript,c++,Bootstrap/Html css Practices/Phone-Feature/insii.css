@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+
+nav {
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-content: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.information {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img {
+    width: 70px;
+}
+
+.feature {
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+
+.feature div {
+    margin-left: 30px;
+}
+
+.one {
+    top: 450px;
+    right: 30px;
+}
+
+.two {
+    top: 50px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+
+.three {
+    top: 450px;
+    transform: rotate(180deg);
+}
+
+.four {
+    top: 800px;
+    left: 350px;
+    transform: rotate(90deg);
+}
+
+.mobile {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.controls img {
+    width: 15px;
+}
+
+.controls h3 {
+    margin: 15px;
+    color:white;
+}
+
+#upbtn {
+    cursor: pointer;
+}
+
+#downbtn {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-left: 500px solid #fff;
+    border-bottom: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-top: 500px solid #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+}
